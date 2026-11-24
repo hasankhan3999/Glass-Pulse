@@ -1,11 +1,11 @@
-name: Build APK
+name: GlassPulse
 on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: unzip -q GlassControlCenter.zip -d proj
+      - run: unzip -q "GlassControlCenter (1).zip" -d proj
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
